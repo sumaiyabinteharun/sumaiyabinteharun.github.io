@@ -1,198 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional portfolio of Sumaiya Binte Harun — Structural Civil Engineer, infrastructure professional, and researcher.">
-  <title>Sumaiya Binte Harun | Structural Civil Engineer</title>
-  <style>
-    :root{
-      --ink:#17202a; --muted:#68727d; --paper:#f7f8f6; --white:#fff;
-      --accent:#1f5f68; --accent2:#d9ebe9; --line:#dfe5e3; --dark:#102b32;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      color:var(--ink);background:var(--paper);line-height:1.6}
-    a{color:inherit;text-decoration:none}
-    .container{width:min(1120px,92%);margin:auto}
-    nav{position:sticky;top:0;z-index:20;background:rgba(247,248,246,.92);backdrop-filter:blur(12px);
-      border-bottom:1px solid var(--line)}
-    .nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
-    .brand{font-weight:800;letter-spacing:-.03em}
-    .brand span{color:var(--accent)}
-    .navlinks{display:flex;gap:28px;font-size:.92rem;color:var(--muted)}
-    .navlinks a:hover{color:var(--accent)}
-    .hero{padding:100px 0 88px;background:linear-gradient(135deg,#f7f8f6 0%,#edf4f2 100%)}
-    .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:center}
-    .eyebrow{color:var(--accent);font-size:.82rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px}
-    h1{font-size:clamp(3rem,7vw,5.8rem);line-height:.98;letter-spacing:-.065em;margin-bottom:24px}
-    .hero p{font-size:1.18rem;color:var(--muted);max-width:690px}
-    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
-    .btn{padding:12px 19px;border-radius:7px;border:1px solid var(--accent);font-weight:700;font-size:.92rem}
-    .btn.primary{background:var(--accent);color:white}
-    .btn.secondary{background:transparent;color:var(--accent)}
-    .profile-card{background:var(--dark);color:white;border-radius:20px;padding:30px;box-shadow:0 20px 50px rgba(16,43,50,.15)}
-    .profile-mark{height:190px;border:1px solid rgba(255,255,255,.18);border-radius:14px;display:grid;place-items:center;
-      font-size:4.5rem;font-weight:800;letter-spacing:-.08em;margin-bottom:24px}
-    .profile-card h3{font-size:1.15rem;margin-bottom:5px}
-    .profile-card p{color:#b9c9cc;font-size:.92rem}
-    section{padding:88px 0}
-    .section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:40px}
-    .kicker{font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:800}
-    h2{font-size:2.45rem;letter-spacing:-.04em;margin-top:8px}
-    .intro{max-width:620px;color:var(--muted)}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
-    .about-grid p{color:var(--muted);font-size:1.03rem}
-    .facts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    .fact{border-top:1px solid var(--line);padding-top:15px}
-    .fact strong{display:block;font-size:.88rem}.fact span{color:var(--muted);font-size:.9rem}
-    .dark{background:var(--dark);color:white}
-    .dark .kicker{color:#9bd0ca}.dark .intro{color:#b9c9cc}
-    .timeline{display:grid;gap:0}
-    .item{display:grid;grid-template-columns:180px 1fr;gap:35px;padding:28px 0;border-top:1px solid rgba(255,255,255,.14)}
-    .item .date{color:#9bd0ca;font-size:.85rem;font-weight:700}
-    .item h3{font-size:1.25rem}.item p{color:#b9c9cc;margin-top:7px}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:white;border:1px solid var(--line);padding:27px;border-radius:13px;min-height:220px}
-    .card .num{color:var(--accent);font-weight:800;font-size:.78rem}
-    .card h3{margin:12px 0 8px;font-size:1.18rem}.card p{color:var(--muted);font-size:.92rem}
-    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}
-    .tag{background:var(--accent2);color:var(--accent);padding:5px 9px;border-radius:999px;font-size:.74rem;font-weight:700}
-    .education{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .edu{background:white;border:1px solid var(--line);border-radius:13px;padding:28px}
-    .edu small{color:var(--accent);font-weight:800}.edu h3{margin:7px 0}.edu p{color:var(--muted)}
-    .contact{background:#e7f0ee}
-    .contact-box{display:flex;justify-content:space-between;align-items:center;gap:30px}
-    footer{padding:28px 0;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line)}
-    @media(max-width:800px){
-      .navlinks{display:none}.hero{padding:70px 0}.hero-grid,.about-grid,.education{grid-template-columns:1fr}
-      .cards{grid-template-columns:1fr}.item{grid-template-columns:1fr;gap:5px}.section-head{display:block}
-      .contact-box{display:block}.contact-box .buttons{margin-top:22px}
-    }
-  </style>
-</head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Professional portfolio of Sumaiya Binte Harun — Structural Engineer specializing in bridge and infrastructure engineering in Bangladesh.">
+<title>Sumaiya Binte Harun | Structural Engineer</title>
+<style>
+:root{--navy:#102a43;--blue:#1d5573;--gold:#c99a3e;--cream:#f7f5ef;--ink:#17212b;--muted:#61707c;--line:#dfe4e7}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.65}a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:850;font-size:1.15rem;color:var(--navy);letter-spacing:.04em}.brand span{color:var(--gold)}.navlinks{display:flex;gap:20px;align-items:center;font-size:.84rem;color:#42515e}.navlinks a:hover{color:var(--blue)}.cvbtn{background:var(--navy);color:#fff;padding:9px 15px;border-radius:5px;font-weight:700}.hero{color:#fff;background:linear-gradient(110deg,#081c2e,#12394e);padding:88px 0 82px}.hero-grid{display:grid;grid-template-columns:1.5fr .9fr;gap:65px;align-items:center}.eyebrow,.kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.14em;font-size:.74rem;font-weight:850}.hero h1{font-family:Georgia,serif;font-size:clamp(3rem,6vw,5.3rem);line-height:1.02;letter-spacing:-.045em;margin:17px 0}.hero-title{font-size:1.25rem;font-weight:750;color:#e5c77f;margin-bottom:18px}.hero-copy{max-width:720px;color:#dce5ea;font-size:1.02rem}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;border:1px solid rgba(255,255,255,.55);padding:11px 18px;border-radius:5px;font-size:.9rem;font-weight:750}.btn.gold{background:var(--gold);border-color:var(--gold);color:#152536}.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stat{border:1px solid rgba(255,255,255,.28);border-radius:9px;padding:20px 16px;background:rgba(255,255,255,.055);text-align:center}.stat strong{display:block;font-size:1.45rem}.stat span{font-size:.78rem;color:#d2dce1}section{padding:78px 0}.section-head{margin-bottom:36px}.section-head h2{font-family:Georgia,serif;font-size:2.45rem;letter-spacing:-.035em;margin-top:5px}.lead{color:var(--muted);max-width:760px}.two{display:grid;grid-template-columns:1.15fr .85fr;gap:55px}.text p{color:var(--muted);margin-bottom:16px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{border-top:1px solid var(--line);padding:13px 0}.fact b{display:block;font-size:.82rem}.fact span{color:var(--muted);font-size:.84rem}.alt{background:var(--cream)}.dark{background:var(--navy);color:#fff}.dark .kicker{color:#e0b75c}.dark .lead{color:#c7d4dc}.timeline{display:grid}.role{display:grid;grid-template-columns:190px 1fr;gap:35px;padding:27px 0;border-top:1px solid rgba(255,255,255,.15)}.date{color:#e0b75c;font-size:.78rem;font-weight:800}.role h3{font-size:1.22rem}.role p,.bullets{color:#c8d4db}.bullets{margin-top:12px;padding-left:18px;font-size:.9rem}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project,.mini,.degree{border:1px solid var(--line);border-radius:10px;padding:25px;background:#fff}.project .num{color:var(--gold);font-weight:850;font-size:.75rem}.project h3{font-size:1.16rem;margin:8px 0}.project p,.project li,.mini p,.mini li,.degree p{color:var(--muted);font-size:.88rem}.project ul,.mini ul{margin:12px 0 0 18px}.tagrow{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}.tag{font-size:.7rem;font-weight:750;color:var(--blue);background:#e9f1f4;padding:4px 8px;border-radius:99px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.edu{display:grid;grid-template-columns:1fr 1fr;gap:18px}.degree small{color:var(--blue);font-weight:800}.degree h3{margin:6px 0}.awards{columns:2;column-gap:45px}.awards li{break-inside:avoid;margin-bottom:9px;color:var(--muted);font-size:.9rem}.contact{background:#edf3f4}.contactbox{display:flex;justify-content:space-between;gap:35px;align-items:center}.contact-info p{color:var(--muted);margin:3px 0}.contact-info a{color:var(--blue);font-weight:700}footer{background:#0b1f30;color:#aebdc6;padding:25px 0;font-size:.8rem}@media(max-width:900px){.navlinks{display:none}.hero-grid,.two,.edu{grid-template-columns:1fr}.stats{max-width:500px}.projects,.grid3{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:4px}.awards{columns:1}.contactbox{display:block}}
+</style></head>
 <body>
-<nav>
-  <div class="container nav-inner">
-    <a class="brand" href="#">SB<span>H</span></a>
-    <div class="navlinks">
-      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
-      <a href="#research">Research</a><a href="#education">Credentials</a><a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="container hero-grid">
-    <div>
-      <div class="eyebrow">Structural Engineering · Infrastructure · Research</div>
-      <h1>Sumaiya<br>Binte Harun</h1>
-      <p>Structural Civil Engineer working across bridge and transport infrastructure, with professional experience in consultancy, design, and supervision of public infrastructure projects in Bangladesh.</p>
-      <div class="buttons">
-        <a class="btn primary" href="#projects">Explore my work</a>
-        <a class="btn secondary" href="#contact">Get in touch</a>
-      </div>
-    </div>
-    <div class="profile-card">
-      <div class="profile-mark">SBH</div>
-      <h3>Structural Civil Engineer</h3>
-      <p>DPM Consultants Ltd. · Dhaka, Bangladesh</p>
-      <br>
-      <p>Bridge design · Transport infrastructure · RCC & PSC · MIDAS Civil · STAAD.Pro</p>
-    </div>
-  </div>
-</header>
-
-<section id="about">
-  <div class="container">
-    <div class="section-head">
-      <div><div class="kicker">01 · About</div><h2>Engineering with a broader perspective.</h2></div>
-      <p class="intro">A professional profile combining structural engineering practice, infrastructure consultancy, business education, and emerging research interests.</p>
-    </div>
-    <div class="about-grid">
-      <p>I am a Structural Civil Engineer with professional experience in bridge and transport consultancy. Since joining DPM Consultants Ltd. in 2021, I have worked on government infrastructure assignments involving LGED, RHD, and City Corporations, including bridge, flyover, road and transport-related projects.</p>
-      <div class="facts">
-        <div class="fact"><strong>Current role</strong><span>Structural Engineer · DPM Consultants Ltd.</span></div>
-        <div class="fact"><strong>Engineering degree</strong><span>B.Sc. Civil Engineering · KUET</span></div>
-        <div class="fact"><strong>Business education</strong><span>MBA · IBA, University of Dhaka</span></div>
-        <div class="fact"><strong>Technical focus</strong><span>Bridge & infrastructure engineering</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="experience" class="dark">
-  <div class="container">
-    <div class="section-head">
-      <div><div class="kicker">02 · Experience</div><h2>Professional experience</h2></div>
-      <p class="intro">Selected responsibilities from structural design and infrastructure consultancy work.</p>
-    </div>
-    <div class="timeline">
-      <div class="item">
-        <div class="date">JUL 2021 — PRESENT</div>
-        <div><h3>Structural Engineer · DPM Consultants Ltd.</h3>
-          <p>Structural design and consultancy for public infrastructure projects, with work spanning bridges, flyovers, roads and transport infrastructure.</p></div>
-      </div>
-      <div class="item">
-        <div class="date">SELECTED WORK</div>
-        <div><h3>Bridge & Transport Infrastructure</h3>
-          <p>Design and engineering work involving RCC, PSC and steel bridge structures; coordination with geotechnical and hydrological disciplines; and technical support for project implementation and supervision.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="container">
-    <div class="section-head">
-      <div><div class="kicker">03 · Selected projects</div><h2>Work in infrastructure</h2></div>
-      <p class="intro">A portfolio structure designed to grow as project drawings, photographs, calculations and project summaries are added.</p>
-    </div>
-    <div class="cards">
-      <article class="card"><div class="num">PROJECT 01</div><h3>Chittagong Expressway & Flyover Work</h3><p>Structural engineering experience connected to major transport infrastructure works in Chittagong.</p><div class="tags"><span class="tag">Transport</span><span class="tag">Structures</span></div></article>
-      <article class="card"><div class="num">PROJECT 02</div><h3>Road Widening & Bridge Reconstruction</h3><p>Engineering work associated with road widening projects and reconstruction of bridges across the Chittagong division.</p><div class="tags"><span class="tag">Bridges</span><span class="tag">RCC</span><span class="tag">PSC</span></div></article>
-      <article class="card"><div class="num">PROJECT 03</div><h3>Bridge Design & Consultancy</h3><p>Structural design and consultancy activities for public-sector infrastructure, supported by numerical modelling and multidisciplinary coordination.</p><div class="tags"><span class="tag">MIDAS Civil</span><span class="tag">STAAD.Pro</span></div></article>
-    </div>
-  </div>
-</section>
-
-<section id="research" class="dark">
-  <div class="container">
-    <div class="section-head">
-      <div><div class="kicker">04 · Research</div><h2>Questions beyond the drawing board.</h2></div>
-      <p class="intro">Research interests connecting infrastructure engineering with resilience, computational methods and infrastructure management.</p>
-    </div>
-    <div class="cards">
-      <article class="card"><div class="num">01</div><h3>Resilient Infrastructure</h3><p>Infrastructure systems designed to withstand hazards, uncertainty and changing environmental conditions.</p></article>
-      <article class="card"><div class="num">02</div><h3>Erosion & Material Point Method</h3><p>Interest in numerical simulation of levee and bank erosion and the application of Material Point Method approaches.</p></article>
-      <article class="card"><div class="num">03</div><h3>Infrastructure Management</h3><p>Bridging engineering practice with decision-making, asset management and long-term infrastructure resilience.</p></article>
-    </div>
-  </div>
-</section>
-
-<section id="education">
-  <div class="container">
-    <div class="section-head">
-      <div><div class="kicker">05 · Credentials</div><h2>Education & qualifications</h2></div>
-    </div>
-    <div class="education">
-      <div class="edu"><small>2016 — 2020</small><h3>B.Sc. in Civil Engineering</h3><p>Khulna University of Engineering & Technology (KUET)</p><p>CGPA: 3.02 / 4.00</p></div>
-      <div class="edu"><small>ONGOING · 2026</small><h3>Master of Business Administration (MBA)</h3><p>Institute of Business Administration (IBA), University of Dhaka</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <div class="container contact-box">
-    <div><div class="kicker">06 · Contact</div><h2>Let's connect.</h2><p style="color:var(--muted);margin-top:8px">For professional, research, or collaboration opportunities.</p></div>
-    <div class="buttons">
-      <a class="btn primary" href="mailto:sumaiyabh.kuet@gmail.com">Email me</a>
-      <a class="btn secondary" href="https://www.linkedin.com/in/sumaiyabinteharun/" target="_blank">LinkedIn</a>
-    </div>
-  </div>
-</section>
-
-<footer><div class="container">© 2026 Sumaiya Binte Harun · Structural Civil Engineer</div></footer>
-</body>
-</html>
+<nav><div class="container nav"><a class="brand" href="#">SUMAIYA <span>BH</span></a><div class="navlinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#education">Education</a><a href="#publications">Publications</a><a href="#skills">Skills</a><a href="#contact">Contact</a><a class="cvbtn" href="#contact">CV</a></div></div></nav>
+<header class="hero"><div class="container hero-grid"><div><div class="eyebrow">Structural Engineering · Bridge & Infrastructure</div><h1>Sumaiya Binte Harun</h1><div class="hero-title">Structural Engineer | Bridge & Infrastructure Engineering</div><p class="hero-copy">Structural Engineer with approximately five years of professional experience in bridge and transportation infrastructure consultancy in Bangladesh, working across major public-sector projects under LGED, RHD and City Corporations.</p><div class="buttons"><a class="btn gold" href="#projects">View My Work →</a><a class="btn" href="#contact">Get in Touch</a></div></div><div class="stats"><div class="stat"><strong>5+</strong><span>Years of professional experience</span></div><div class="stat"><strong>450+</strong><span>Bridges across selected assignments</span></div><div class="stat"><strong>2</strong><span>Major PSC I-Girder flyovers</span></div><div class="stat"><strong>3</strong><span>Conference publications</span></div></div></div></header>
+<section id="about"><div class="container"><div class="section-head"><div class="kicker">01 · Professional Profile</div><h2>Engineering practice with an interdisciplinary perspective.</h2><p class="lead">Bridge engineering, infrastructure consultancy, business education and emerging research interests brought together in one professional profile.</p></div><div class="two"><div class="text"><p>I am a Structural Engineer at Design Planning & Management Consultants Ltd. (DPM Consultants), working primarily on government-funded and development-partner-supported transportation infrastructure projects in Bangladesh.</p><p>My experience covers feasibility studies, bridge planning, structural analysis, detailed design, design documentation and drawing review for reinforced concrete, prestressed concrete, steel arch and steel truss bridge systems.</p><p>I work with MIDAS Civil and STAAD Pro and have experience across bridge superstructures, substructures and foundation-related design coordination, including piles, pile caps, piers and pier caps. My work also involves interpreting geotechnical and hydrological information and coordinating with multidisciplinary engineering teams.</p><p>Alongside full-time engineering employment, I am completing an MBA at IBA, University of Dhaka, developing a complementary perspective on strategy, analytics, management and infrastructure project delivery.</p></div><div class="facts"><div class="fact"><b>Current role</b><span>Structural Engineer · DPM Consultants Ltd.</span></div><div class="fact"><b>Location</b><span>Dhaka, Bangladesh</span></div><div class="fact"><b>Engineering degree</b><span>B.Sc. Civil Engineering · KUET</span></div><div class="fact"><b>Graduate degree</b><span>MBA · IBA, University of Dhaka</span></div><div class="fact"><b>Core domain</b><span>Bridge & transportation infrastructure</span></div><div class="fact"><b>Technical tools</b><span>MIDAS Civil · STAAD Pro · ETABS · AutoCAD · Revit</span></div></div></div></div></section>
+<section id="experience" class="dark"><div class="container"><div class="section-head"><div class="kicker">02 · Professional Experience</div><h2>Structural engineering in public infrastructure.</h2><p class="lead">Experience spanning bridge planning, analysis, detailed design, technical documentation and multidisciplinary coordination.</p></div><div class="timeline"><div class="role"><div class="date">JUL 2021 — PRESENT</div><div><h3>Structural Engineer · Design Planning & Management Consultants Ltd. (DPM Consultants)</h3><p>Dhaka, Bangladesh</p><ul class="bullets"><li>Structural planning, analysis, detailed design and documentation of bridges and transportation infrastructure.</li><li>Structural modelling and analysis using MIDAS Civil and STAAD Pro.</li><li>Design and analysis of RCC, PSC I-Girder, PSB Girder, steel arch and steel truss bridge systems.</li><li>Design/coordination of superstructures, piers, pier caps, piles, pile caps and foundations.</li><li>Review of sub-soil investigation and hydrological information for bridge planning and foundation design.</li><li>Coordination with geotechnical engineers, hydrologists, draftsmen and multidisciplinary teams.</li><li>Participation in feasibility studies, bridge type selection, preliminary assessment and design review.</li><li>Application of AASHTO, BNBC, LGED and RHD specifications and project requirements.</li></ul></div></div></div></div></section>
+<section id="projects" class="alt"><div class="container"><div class="section-head"><div class="kicker">03 · Selected Project Experience</div><h2>Selected infrastructure portfolio.</h2><p class="lead">A selection of major assignments illustrating the scale and breadth of my bridge and transportation engineering experience.</p></div><div class="projects">
+<article class="project"><div class="num">01 · LGED · CDWSP</div><h3>Chittagong Division Important Upazila & Union Road Widening and Strengthening Project</h3><p><b>~180 bridges</b> · spans approximately 15–100 m</p><ul><li>Planning, structural analysis, detailed design and drawing supervision.</li><li>RCC, PSC I-Girder, PSB Girder, steel arch and steel truss systems.</li><li>Survey, sub-soil and hydrological data interpretation.</li><li>Bridge type/span selection considering structural, hydraulic, constructability and economic factors.</li></ul><div class="tagrow"><span class="tag">LGED</span><span class="tag">Bridge Design</span><span class="tag">PSC</span></div></article>
+<article class="project"><div class="num">02 · RHD · BARISAL</div><h3>Feasibility Study & Detailed Design of Narrow, Old and Dilapidated Bridges</h3><p><b>~138 bridges</b> · spans approximately 15–130 m</p><ul><li>Feasibility assessment, planning, analysis and detailed design.</li><li>Worked with constrained alignments and existing infrastructure.</li><li>Considered safety, serviceability, constructability and traffic constraints.</li></ul><div class="tagrow"><span class="tag">RHD</span><span class="tag">Feasibility</span><span class="tag">Structural Analysis</span></div></article>
+<article class="project"><div class="num">03 · CHITTAGONG ROAD DIVISION</div><h3>Hathazari Junction Flyover Project</h3><p><b>Two major PSC I-Girder flyovers</b></p><ul><li>1,520 m flyover: 38 × 40 m spans.</li><li>1,840 m flyover: 46 × 40 m spans.</li><li>3D modelling and analysis of PSC I-Girder superstructures.</li><li>Structural system, pier/foundation coordination and drawing review.</li><li>Consideration of traffic loading, seismic effects and serviceability.</li></ul><div class="tagrow"><span class="tag">PSC I-Girder</span><span class="tag">Flyover</span><span class="tag">MIDAS Civil</span></div></article>
+<article class="project"><div class="num">04 · CHITTAGONG CITY CORPORATION</div><h3>Improvement of Roads and Bridges</h3><p><b>~17 bridges · ~22 culverts</b> · spans approximately 10–40 m</p><ul><li>Feasibility study, planning, structural design and drawing supervision.</li><li>PSC I-Girder, RCC Girder and slab bridges.</li><li>Urban constraints including utilities, drainage, limited workspace, traffic and future widening.</li></ul><div class="tagrow"><span class="tag">Urban Infrastructure</span><span class="tag">RCC</span><span class="tag">Culverts</span></div></article>
+<article class="project"><div class="num">05 · LGED · MRRIDP</div><h3>Mymensingh Region Rural Infrastructure Development Project</h3><p><b>~135 bridges</b></p><ul><li>Structural analysis and detailed design.</li><li>PSC I-Girder, RCC Girder and slab bridge systems.</li><li>Coordination with geotechnical and hydrology teams.</li><li>Standardized designs adapted to site-specific soil and waterway conditions.</li></ul><div class="tagrow"><span class="tag">LGED</span><span class="tag">Rural Infrastructure</span></div></article>
+<article class="project"><div class="num">06 · FEASIBILITY STUDY</div><h3>Sunamganj–Durgapur Border Road</h3><p><b>~110 km road corridor</b></p><ul><li>Route selection and preliminary technical assessment.</li><li>Topographical, hydrological and transportation assessment.</li><li>Bridge type/span selection along the proposed route.</li><li>Consideration of runoff, heavy axle loads, constructability and maintenance.</li></ul><div class="tagrow"><span class="tag">Road Infrastructure</span><span class="tag">Feasibility</span><span class="tag">Hydrology</span></div></article>
+</div></div></section>
+<section id="research"><div class="container"><div class="section-head"><div class="kicker">04 · Research Interests</div><h2>Questions at the intersection of infrastructure and resilience.</h2></div><div class="grid3"><div class="mini"><h3>Bridge & Structural Engineering</h3><ul><li>Bridge engineering</li><li>Prestressed concrete bridges</li><li>Structural analysis and design</li><li>Bridge foundation systems</li><li>Soil–structure interaction</li></ul></div><div class="mini"><h3>Resilient Infrastructure</h3><ul><li>Infrastructure resilience</li><li>Scour and hydraulic effects</li><li>Geotechnical aspects of bridge engineering</li><li>Infrastructure monitoring and maintenance</li><li>Infrastructure asset management</li></ul></div><div class="mini"><h3>Infrastructure Delivery</h3><ul><li>Construction engineering & management</li><li>Infrastructure project delivery</li><li>Public-sector procurement</li><li>Project management</li><li>Development-financed infrastructure</li></ul></div></div></div></section>
+<section id="publications" class="alt"><div class="container"><div class="section-head"><div class="kicker">05 · Research & Publications</div><h2>Selected academic work.</h2></div><div class="projects"><article class="project"><div class="num">ICCESD 2020 · FIRST AUTHOR</div><h3>Analysis of Surface Water Quality Adjacent to the Waste Disposal Site in Khulna</h3><p>Conference publication based partly on undergraduate thesis research conducted under the supervision of Dr. Md. Rafizul Islam.</p><div class="tagrow"><span class="tag">Water Quality</span><span class="tag">KUET</span></div></article><article class="project"><div class="num">ICCESD 2022 · CO-AUTHOR</div><h3>Development of Trickling Filter for Wastewater Treatment</h3><p>Conference publication on wastewater treatment and environmental engineering.</p></article><article class="project"><div class="num">IPWE 2023 · CO-AUTHOR</div><h3>Drought Vulnerability Assessment Using Fuzzy Based Approach: A Case Study on Northwest Region of Bangladesh</h3><p>Conference publication applying a fuzzy-based approach to drought vulnerability assessment.</p></article></div></div></section>
+<section id="education"><div class="container"><div class="section-head"><div class="kicker">06 · Education</div><h2>Academic foundation.</h2></div><div class="edu"><div class="degree"><small>JAN 2023 — 2026</small><h3>Master of Business Administration (MBA)</h3><p><b>Institute of Business Administration (IBA), University of Dhaka</b></p><p>Current/most recent reported CGPA: <b>3.11/4.00</b></p><p>Graduate business education pursued alongside full-time engineering employment, with exposure to analytics, research methods, strategy, operations, finance, marketing and business strategy.</p></div><div class="degree"><small>2016 — 2020</small><h3>B.Sc. in Civil Engineering</h3><p><b>Khulna University of Engineering & Technology (KUET)</b></p><p>CGPA: <b>3.02/4.00</b></p><p>Undergraduate thesis: <i>Analysis of Surface Water Quality Adjacent to the Waste Disposal Site in Khulna.</i></p><p>Supervisor: Dr. Md. Rafizul Islam, Professor, Department of Civil Engineering, KUET.</p></div><div class="degree"><small>2015</small><h3>Higher Secondary Certificate (Science)</h3><p><b>Viqarunnisa Noon School & College</b></p><p>GPA: <b>5.00/5.00</b></p></div><div class="degree"><small>2013</small><h3>Secondary School Certificate (Science)</h3><p><b>Viqarunnisa Noon School & College</b></p><p>GPA: <b>5.00/5.00</b></p></div></div></div></section>
+<section id="skills" class="dark"><div class="container"><div class="section-head"><div class="kicker">07 · Skills & Training</div><h2>Technical toolkit.</h2></div><div class="grid3"><div class="mini"><h3>Structural Engineering</h3><p>Bridge superstructure/substructure design · RCC · PSC · structural analysis · modelling · foundations · pile/pile cap/pier design · feasibility studies · drawing review · technical documentation.</p></div><div class="mini"><h3>Software</h3><p>MIDAS Civil · STAAD Pro · ETABS · AutoCAD · Autodesk Revit · Microsoft Excel · Word · PowerPoint · Power BI · Python · EPANET.</p></div><div class="mini"><h3>Codes & Standards</h3><p>AASHTO · BNBC · LGED specifications · RHD specifications.</p></div><div class="mini"><h3>Professional Training</h3><p>21-hour Bangladesh Public Procurement Rules training · 28-hour DataCamp Python course · AutoCAD workshop · Revit workshop · ETABS workshop.</p></div><div class="mini"><h3>Languages</h3><p>Bangla — Native · English — Fluent · Hindi — Fluent · Urdu — Conversational/working · Korean — Basic.</p></div><div class="mini"><h3>Leadership</h3><p>Assistant General Secretary, KUET Debating Society · Chief Policy Analyst, Spectrum KUET · Publication & Publicity Secretary, ICE KUET Chapter · Vice President, Viqarunnisa Noon Debating Club.</p></div></div></div></section>
+<section><div class="container"><div class="section-head"><div class="kicker">08 · Selected Recognition</div><h2>Leadership, competitions & achievements.</h2></div><ul class="awards"><li>Hult Prize 2020 — Ho Chi Minh City Regional Finalist</li><li>Hult Prize 2020 — KUET On-Campus Runner-Up</li><li>Hult Prize 2019 — Kuala Lumpur Regional Finalist</li><li>Hult Prize 2019 — KUET On-Campus Runner-Up</li><li>Gold Award — UniV 1st International Poster Competition on Achieving SDGs, 2021</li><li>Champion — EEE Fest 2019, ULAB</li><li>Champion — BitFest 2019, KUET</li><li>1st Runner-Up — EEE Day TechFiesta 3.0, KUET</li><li>1st Runner-Up — University Day 2019, KUET</li><li>Champion — IPE Fest 2018, KUET</li><li>1st Runner-Up — Essonance 2018, IUT</li><li>2nd Runner-Up — Exceed 2018, SUST</li><li>Champion — Ignition 2018, KUET</li><li>Champion — Civil Cultural Week, KUET</li><li>Champion — Bullet Proof V1, KUET Career Club</li><li>HSC Board Scholarship — Talent Pool, 2015</li></ul></div></section>
+<section id="contact" class="contact"><div class="container contactbox"><div class="contact-info"><div class="kicker">09 · Contact</div><h2>Let's connect.</h2><p>Dhaka, Bangladesh</p><p>Phone: <a href="tel:+8801763598906">+880 1763 598906</a></p><p>Email: <a href="mailto:sumaiyabh.kuet@gmail.com">sumaiyabh.kuet@gmail.com</a></p><p>LinkedIn: <a href="https://linkedin.com/in/sumaiyabinteharun" target="_blank">linkedin.com/in/sumaiyabinteharun</a></p></div><div class="buttons"><a class="btn" style="border-color:var(--navy);color:var(--navy)" href="mailto:sumaiyabh.kuet@gmail.com">Email me</a><a class="btn" style="background:var(--navy);color:#fff;border-color:var(--navy)" href="https://linkedin.com/in/sumaiyabinteharun" target="_blank">LinkedIn</a></div></div></section>
+<footer><div class="container">© 2026 Sumaiya Binte Harun · Structural Engineer | Bridge & Infrastructure Engineering</div></footer>
+</body></html>
